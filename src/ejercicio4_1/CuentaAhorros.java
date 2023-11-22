@@ -1,6 +1,6 @@
-package Ejer4_1;
+package ejercicio4_1;
 
-public class CuentaAhorros extends Cuenta {
+public class CuentaAhorros extends Cuenta{
     private boolean activa;
 
     public CuentaAhorros(float saldo,float tasa){

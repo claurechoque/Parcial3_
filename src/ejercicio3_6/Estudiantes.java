@@ -1,20 +1,20 @@
-package Ejer3_6;
+package ejercicio3_6;
 
 public class Estudiantes {
-        private String nombre;
-        private String apellidos;
-        private int codigo;
-        private int semestre;
-        private double notaFinal;
+    private String nombre;
+    private String apellidos;
+    private int codigo;
+    private int semestre;
+    private double notaFinal;
 
-        // Constructor
-        public Estudiantes (String nombre, String apellidos, int codigo, int semestre, double notaFinal) {
-            this.nombre = nombre;
-            this.apellidos = apellidos;
-            this.codigo = codigo;
-            this.semestre = semestre;
-            this.notaFinal = notaFinal;
-        }
+    // Constructor
+    public Estudiantes (String nombre, String apellidos, int codigo, int semestre, double notaFinal) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.codigo = codigo;
+        this.semestre = semestre;
+        this.notaFinal = notaFinal;
+    }
 
     public String getNombre() {
         return nombre;

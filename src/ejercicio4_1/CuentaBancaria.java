@@ -1,4 +1,4 @@
-package Ejer4_1;
+package ejercicio4_1;
 
 public class CuentaBancaria {
     protected float saldo;

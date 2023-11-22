@@ -1,4 +1,4 @@
-package Ejer4_4;
+package ejercicio4_4;
 
 public class Profesor {
     protected void imprimir(){

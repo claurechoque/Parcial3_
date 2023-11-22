@@ -1,4 +1,4 @@
-package Ejer3_6;
+package ejercicio3_6;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Curso {
 
     // Metodo agregar estudiante
     public void agregarEstudiante() {
-      Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         if (cantidadEstudiantes < MAX_ESTUDIANTES) {
             System.out.println("Ingrese el nombre del estudiante:");
@@ -62,7 +62,7 @@ public class Curso {
         }
         return false;
     }
-// buscador
+    // buscador
     public void buscarEstudiantePorCodigo() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el codigo del estudiante a buscar:");
@@ -165,54 +165,53 @@ public class Curso {
             return 0;
         }
     }
-// menu
-public void mostrarMenu() {
-    Scanner sc= new Scanner(System.in);
+    // menu
+    public void mostrarMenu() {
+        Scanner sc= new Scanner(System.in);
 
-    while (true) {
-        System.out.println("Menu:");
-        System.out.println("1. Agregar estudiante");
-        System.out.println("2. Buscar estudiante por codigo");
-        System.out.println("3. Eliminar estudiante por codigo");
-        System.out.println("4. Calcular promedio del curso");
-        System.out.println("5. Obtener cantidad de estudiantes aprobados");
-        System.out.println("6. Salir");
-        System.out.print("Seleccione una opcion: ");
+        while (true) {
+            System.out.println("Menu:");
+            System.out.println("1. Agregar estudiante");
+            System.out.println("2. Buscar estudiante por codigo");
+            System.out.println("3. Eliminar estudiante por codigo");
+            System.out.println("4. Calcular promedio del curso");
+            System.out.println("5. Obtener cantidad de estudiantes aprobados");
+            System.out.println("6. Salir");
+            System.out.print("Seleccione una opcion: ");
 
-        int opcion = sc.nextInt();
+            int opcion = sc.nextInt();
 
-        switch (opcion) {
-            case 1:
-                agregarEstudiante();
-                break;
-            case 2:
-                buscarEstudiantePorCodigo();
-                break;
-            case 3:
-                eliminarEstudiantePorCodigo();
-                break;
-            case 4:
-                double promedio = calcularPromedioPorSemestre();
+            switch (opcion) {
+                case 1:
+                    agregarEstudiante();
+                    break;
+                case 2:
+                    buscarEstudiantePorCodigo();
+                    break;
+                case 3:
+                    eliminarEstudiantePorCodigo();
+                    break;
+                case 4:
+                    double promedio = calcularPromedioPorSemestre();
 
 
-                System.out.println("Promedio del curso: " + promedio);
-                break;
-            case 5:
-                int cantidadAprobados = obtenerCantidadEstudiantesAprobados();
-                double porcentajeAprobados = calcularPorcentajeAprobados();
-                System.out.println("-----------------------------------------------------");
-                System.out.println("Cantidad de estudiantes aprobados: " + cantidadAprobados);
-                System.out.println("Porcentaje de estudiantes aprobados: " + porcentajeAprobados + "%");
-                System.out.println("-----------------------------------------------------");
-                break;
-            case 6:
-                System.out.println("Saliendo del programa.");
-                System.exit(0);
-                break;
-            default:
-                System.out.println("Opcion no valida. Intente de nuevo.");
+                    System.out.println("Promedio del curso: " + promedio);
+                    break;
+                case 5:
+                    int cantidadAprobados = obtenerCantidadEstudiantesAprobados();
+                    double porcentajeAprobados = calcularPorcentajeAprobados();
+                    System.out.println("-----------------------------------------------------");
+                    System.out.println("Cantidad de estudiantes aprobados: " + cantidadAprobados);
+                    System.out.println("Porcentaje de estudiantes aprobados: " + porcentajeAprobados + "%");
+                    System.out.println("-----------------------------------------------------");
+                    break;
+                case 6:
+                    System.out.println("Saliendo del programa.");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Opcion no valida. Intente de nuevo.");
+            }
         }
     }
-}
-
 }

@@ -1,8 +1,7 @@
-package Ejer3_2;
-
-import Ejer3_6.Curso;
+package ejercicio3_2;
 
 public class Main {
+
     public static void main(String[] args) {
         Cadena cadena1 = new Cadena();
         String mayus ="";
@@ -66,9 +65,9 @@ public class Main {
         System.out.println("Texto invertido: ");
         System.out.println(textoInvertido);
 
-// Curso Universitario
 
-        Curso curso1 = new Curso();
-        curso1.mostrarMenu();
 
-    }}
+
+
+    }
+}

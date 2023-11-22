@@ -1,6 +1,4 @@
-package Ejer3_7;
-
-import Ejer3_6.Computador;
+package ejercicio3_7;
 
 import java.util.Vector;
 
@@ -30,11 +28,11 @@ public class Tienda2 {
 
     public boolean eliminar(String marcaComputadora){
         int pos= buscar(marcaComputadora);
-if (pos<0){
-    return false;
-}
-computadores.removeElement(pos);
-    return true;
+        if (pos<0){
+            return false;
+        }
+        computadores.removeElement(pos);
+        return true;
     }
 
     public int buscar(String marcaComputadora){
@@ -47,7 +45,7 @@ computadores.removeElement(pos);
         System.out.println("Esa marca no existe");
         return -1;
     }
-public void imprimir(){
+    public void imprimir(){
         for (int i=0;i< computadores.size();i++){
             System.out.println("Computador "+i);
             Computadora computador =(Computadora) computadores.elementAt(i);
@@ -58,5 +56,5 @@ public void imprimir(){
             System.out.println("Precio: "+computador.precio);
 
         }
-}
+    }
 }

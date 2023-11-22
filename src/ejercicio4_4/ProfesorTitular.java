@@ -1,7 +1,6 @@
-package Ejer4_4;
+package ejercicio4_4;
 
 public class ProfesorTitular extends Profesor{
-
     int anos=0;
     //@Override
     //protected void imprimir() {

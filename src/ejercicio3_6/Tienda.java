@@ -1,8 +1,7 @@
-package Ejer3_6;
-import java.lang.reflect.Array;
-import java.util.*;
+package ejercicio3_6;
+
 public class Tienda {
-   String nombre,propietario;
+    String nombre,propietario;
     int identTrib;
     //const computador = new comp[];
     Computador[] computadores;
@@ -22,18 +21,18 @@ public class Tienda {
     public boolean tiendaLlena(){
         return numeroComputadores==computadores.length;
     }
-public boolean tiendaVacia(){
+    public boolean tiendaVacia(){
         return numeroComputadores==0;
-}
-public void anadir(Computador computador){
+    }
+    public void anadir(Computador computador){
         if (tiendaLlena()){
             System.out.println("La tienda esta llena. No se puede agregar elementos.");
         }else {
             computadores[numeroComputadores]=computador;
             numeroComputadores++;
         }
-}
-public boolean eliminar(String marcaComputador){
+    }
+    public boolean eliminar(String marcaComputador){
         int pos=buscar(marcaComputador);
         if (pos<0){
             return false;
@@ -41,17 +40,17 @@ public boolean eliminar(String marcaComputador){
         for (int i=pos;i<numeroComputadores;i++){
             computadores[i]=computadores[i+1];
         }
-numeroComputadores--;
+        numeroComputadores--;
         return true;
     }
-public int buscar(String marcaComputador){
+    public int buscar(String marcaComputador){
         for (int i=0;i<numeroComputadores;i++){
             if (computadores[i].marca.equals(marcaComputador))
                 return i;
         }
-return -1;
+        return -1;
     }
-public void imprimir(){
+    public void imprimir(){
         for (int i=0;i<numeroComputadores;i++){
             System.out.println("Computador "+i);
             System.out.println("Marca: "+computadores[i].marca);
@@ -60,7 +59,7 @@ public void imprimir(){
             System.out.println("Sistema operativo: "+computadores[i].sisteOpera);
             System.out.println("Precio: "+computadores[i].precio);
         }
-}
+    }
 
     public String getNombre() {
         return nombre;
@@ -102,5 +101,3 @@ public void imprimir(){
         Tienda.numeroComputadores = numeroComputadores;
     }
 }
-
-

@@ -1,4 +1,4 @@
-package Ejer3_7;
+package ejercicio3_7;
 
 public class Computadora {
     String marca,caracteristicasProcesador,sistemaOperativo;

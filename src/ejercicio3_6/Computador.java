@@ -1,4 +1,4 @@
-package Ejer3_6;
+package ejercicio3_6;
 
 public class Computador {
     public String marca;

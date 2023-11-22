@@ -1,6 +1,6 @@
-package Ejer4_1;
+package ejercicio4_1;
 
-public class CuentaCorriente extends Cuenta{
+public class CuentaCorriente extends Cuenta {
     float sobregiro;
     public CuentaCorriente(float saldo, float tasa){
         super(saldo,tasa);

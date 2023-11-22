@@ -1,4 +1,4 @@
-package Ejer4_1;
+package ejercicio4_1;
 
 public class Cuenta {
     protected float saldo;
@@ -14,8 +14,8 @@ public class Cuenta {
 
     public void consignar(float cantidad) {
 
-       saldo =saldo+cantidad;
-       numeroConsignaciones=numeroConsignaciones+1;
+        saldo =saldo+cantidad;
+        numeroConsignaciones=numeroConsignaciones+1;
     }
 
     public void retirar(float cantidad) {
@@ -23,7 +23,7 @@ public class Cuenta {
         if (nuevoSaldo>=0){
             saldo-=cantidad;
             numeroRetiros=numeroRetiros+1;
-                   }else {
+        }else {
             System.out.println("No es posible realizar el retiro. Verifique el saldo o la cantidad a retirar.");
         }
     }
@@ -45,5 +45,4 @@ public class Cuenta {
         System.out.println("Tasa anual: " + tasaAnual + "%");
         System.out.println("Comisión mensual: $" + comisionMensual);
     }
-
 }

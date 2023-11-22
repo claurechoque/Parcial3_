@@ -1,4 +1,4 @@
-package Ejer4_1;
+package ejercicio4_1;
 
 public class Libro {
     private String titulo;
@@ -41,5 +41,5 @@ public class Libro {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-}
 
+}

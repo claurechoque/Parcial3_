@@ -1,5 +1,6 @@
-package Ejer4_1;
-public class Novela extends Libro {
+package ejercicio4_1;
+
+public class Novela extends Libro{
     private String tipo;
 
     public Novela(String titulo, String autor, double precio, String tipo) {
@@ -13,5 +14,5 @@ public class Novela extends Libro {
         System.out.println("Tipo de Novela: " + tipo);
         System.out.println();
     }
-}
 
+}
